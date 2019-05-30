@@ -47,7 +47,7 @@ node {
             def jsonSlurper = new JsonSlurperClassic()
             def robj = jsonSlurper.parseText(jsobSubstring)
             //if (robj.status != "ok") { error 'org creation failed: ' + robj.message }
-            SFDC_USERNAME=ankit@abbvie.com
+            SFDC_USERNAME=robj.result.username
             robj = null
             
         }
